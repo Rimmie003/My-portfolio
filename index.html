@@ -10,21 +10,22 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="navbar">
 
         <a href="index.html" class="logo">NKUBITU MURIMI</a>
 
-        <nav>
+        <nav aria-label="Primary navigation">
             <a href="#work">WORK</a>
             <a href="about.html">ABOUT</a>
-            <a href="#contact">↗</a>
+            <a href="#contact" aria-label="Jump to contact section">↗</a>
         </nav>
 
     </header>
 
 
-    <main>
+    <main id="main">
 
         <!-- HERO -->
 <section class="hero">
@@ -45,7 +46,7 @@
         <div class="hero-visual">
 
             <div class="hero-image">
-                <img src="assets/images/Main hero image.png" alt="Nkubitu Murimi" class="hero-image-photo">
+                <img src="assets/images/Main hero image.png" alt="Portrait of Nkubitu Murimi" class="hero-image-photo">
             </div>
 
         </div>
@@ -61,32 +62,98 @@
 
 
         <!-- ABOUT INTRO -->
-        <section class="intro">
-
-            <div class="section-label">
-                 01
-            </div>
+        <section class="intro homepage-intro" aria-labelledby="about-statement">
+            <div class="section-label">01 <span aria-hidden="true">—</span> ABOUT</div>
 
             <div class="intro-content">
+                <div class="intro-lead" data-reveal>
+                    <h2 class="intro-statement" id="about-statement">I like building things that look good, work intelligently, and have a reason to exist.</h2>
 
-                <h2>
-                                        About <em>me</em>
-                </h2>
+                    <div class="intro-copy">
+                        <p class="intro-identity">A Computer Science undergraduate exploring the intersection of technology, digital marketing, creativity, and data.</p>
+                        <p class="intro-context">I’m interested in how ideas find an audience, become useful digital experiences, and grow more thoughtful through data and security.</p>
+                    </div>
+                </div>
 
-                <p>
-                                        I’m a Computer Science undergraduate exploring the intersection of technology, digital marketing, creativity, and data. I’m passionate about building digital experiences that combine strong visual design with technology, strategy, and measurable results.
-
-                                        My work spans digital marketing, UI/UX design, web development, data analytics, and cybersecurity. I enjoy creating websites and digital campaigns that are visually engaging, user-focused, and built with a strong understanding of how technology works behind the scenes. From developing interactive web experiences and designing intuitive interfaces to analyzing data and exploring cybersecurity, I’m interested in every layer of the digital ecosystem.
-
-                                        I believe great digital work sits at the intersection of creativity and technology. Design captures attention, marketing creates connection, data provides insight, development brings ideas to life, and cybersecurity helps protect the experiences we build.
-
-                                        Whether I’m working with a small business, an individual brand, or a larger organization, my goal is to create digital solutions that are purposeful, engaging, secure, and backed by thoughtful strategy. I’m constantly experimenting, learning, and developing new ways to turn ideas into digital experiences that make an impact.
-                </p>
-
+                <ol class="about-disciplines" aria-label="Areas I explore">
+                    <li class="about-discipline" data-reveal>
+                        <span class="discipline-number" aria-hidden="true">01</span>
+                        <div>
+                            <h3>DIGITAL</h3>
+                            <p>Marketing / Strategy / Content / SEO</p>
+                        </div>
+                    </li>
+                    <li class="about-discipline" data-reveal>
+                        <span class="discipline-number" aria-hidden="true">02</span>
+                        <div>
+                            <h3>BUILD</h3>
+                            <p>Web / UI / UX / Interactive Experiences</p>
+                        </div>
+                    </li>
+                    <li class="about-discipline" data-reveal>
+                        <span class="discipline-number" aria-hidden="true">03</span>
+                        <div>
+                            <h3>DATA</h3>
+                            <p>Analytics / Reporting / Insights</p>
+                        </div>
+                    </li>
+                    <li class="about-discipline" data-reveal>
+                        <span class="discipline-number" aria-hidden="true">04</span>
+                        <div>
+                            <h3>SECURITY</h3>
+                            <p>Cybersecurity / Secure Development / Networks</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-
         </section>
 
+        <!-- CAPABILITIES -->
+        <section class="capabilities" aria-labelledby="capabilities-heading">
+            <div class="section-label">02 <span aria-hidden="true">—</span> CAPABILITIES</div>
+
+            <div class="capabilities-heading" data-reveal>
+                <h2 id="capabilities-heading">WHAT I BRING<br>TO THE TABLE</h2>
+            </div>
+
+            <div class="capability-grid">
+                <article class="capability" data-reveal>
+                    <div class="capability-topline">
+                        <span class="capability-number">01</span>
+                        <span class="capability-mark" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>DIGITAL<br>MARKETING</h3>
+                    <p>Strategy, content, SEO, SEM, social media and performance analysis.</p>
+                </article>
+
+                <article class="capability" data-reveal>
+                    <div class="capability-topline">
+                        <span class="capability-number">02</span>
+                        <span class="capability-mark" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>WEB<br>DEVELOPMENT</h3>
+                    <p>Responsive websites, interactive experiences, frontend development and system-oriented thinking.</p>
+                </article>
+
+                <article class="capability" data-reveal>
+                    <div class="capability-topline">
+                        <span class="capability-number">03</span>
+                        <span class="capability-mark" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>DATA &amp;<br>ANALYTICS</h3>
+                    <p>Data collection, analysis, reporting, visualization and turning information into useful insights.</p>
+                </article>
+
+                <article class="capability" data-reveal>
+                    <div class="capability-topline">
+                        <span class="capability-number">04</span>
+                        <span class="capability-mark" aria-hidden="true">↗</span>
+                    </div>
+                    <h3>CYBER<br>SECURITY</h3>
+                    <p>Secure development, network security, threat detection, data protection and cybersecurity research.</p>
+                </article>
+            </div>
+        </section>
 
         <!-- WORK -->
         <section class="work" id="work">
@@ -103,8 +170,8 @@
             <!-- PROJECT 1 -->
             <article class="project">
 
-                <div class="project-image placeholder budget-image">
-                    <img src="assets/images/Budget central.png" alt="Budget Central dashboard" class="budget-image-photo">
+                <div class="project-image budget-image">
+                    <img src="assets/images/Budget central.png" alt="Budget Central ICT budgeting portal dashboard" class="budget-image-photo">
                 </div>
 
                 <div class="project-info">
@@ -141,8 +208,8 @@
             <!-- PROJECT 2 -->
             <article class="project reverse">
 
-                <div class="project-image placeholder">
-                    <img src="assets/images/Physio website.png" alt="Physio Portfolio website" class="project-image-photo">
+                <div class="project-image">
+                    <img src="assets/images/Physio website.png" alt="Services page from the Physio Portfolio website" class="project-image-photo">
                 </div>
 
                 <div class="project-info">
@@ -182,8 +249,8 @@
             <!-- PROJECT 3 -->
             <article class="project">
 
-                <div class="project-image placeholder jatra-image">
-                    <img src="assets/images/Jatra inventories.png" alt="Jatra Inventories website" class="jatra-image-photo">
+                <div class="project-image jatra-image">
+                    <img src="assets/images/Jatra inventories.png" alt="Jatra Inventories stock-taking services website" class="jatra-image-photo">
                 </div>
 
                 <div class="project-info">
@@ -208,7 +275,7 @@
                         <span>Fieldwork</span>
                     </div>
 
-                    <span class="text-link" aria-disabled="true">2023 - 2026</span>
+                    <p class="project-date">2023 - 2026</p>
 
                 </div>
 
@@ -217,8 +284,8 @@
             <!-- PROJECT 4 -->
             <article class="project reverse">
 
-                <div class="project-image placeholder digital-advertising-image">
-                    <img src="assets/images/Websites created.png" alt="Viv Perfumes digital advertising website" class="digital-advertising-image-photo">
+                <div class="project-image digital-advertising-image">
+                    <img src="assets/images/Websites created.png" alt="Viv Scents Diary perfume website homepage" class="digital-advertising-image-photo">
                 </div>
 
                 <div class="project-info">
